@@ -1,6 +1,6 @@
 {
   "name": "alfred-material-ui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Alfred 3 workflow to search through the Material-UI documentation.",
   "main": "index.js",
   "author": "Henrik Wenz <HaNdTriX@gmail.com> (https://github.com/HaNdTriX)",
