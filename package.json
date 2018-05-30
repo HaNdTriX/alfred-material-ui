@@ -5,11 +5,24 @@
   "main": "index.js",
   "author": "Henrik Wenz <HaNdTriX@gmail.com> (https://github.com/HaNdTriX)",
   "license": "MIT",
+  "repository": "handtrix/alfred-material-ui",
   "scripts": {
     "postinstall": "alfy-init",
     "preuninstall": "alfy-cleanup",
     "lint": "standard"
   },
+  "files": [
+    "index.js",
+    "icon.png",
+    "info.plist"
+  ],
+  "keywords": [
+    "material-ui",
+    "alfred",
+    "alfred-workflow",
+    "workflow",
+    "alfy"
+  ],
   "dependencies": {
     "alfy": "^0.7.0"
   },
