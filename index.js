@@ -11,31 +11,28 @@ alfy
     body: {
       requests: [{
         indexName: INDEX_NAME,
-        params: `query=${alfy.input}&hitsPerPage=5`
+        params: `query=${alfy.input}&hitsPerPage=6`
       }]
     }
   })
   .then(({ results }) => {
     const { hits } = results[0]
-    const items = hits.map(result => {
-      const entry = {
-        title: `${result.hierarchy.lvl1} > ${result.hierarchy.lvl2 || result.anchor}`,
-        subtitle: result._snippetResult.content.value.replace(/<[^>]+>/g, '').replace(/\n/g, ' ') + '...',
-        arg: result.url,
-        quicklookurl: result.url,
-        mods: {
-          alt: {
-            subtitle: `${result.hierarchy.lvl0} > ${result.hierarchy.lvl1}`
-          }
+    const items = hits.map(result => ({
+      title: Object.values(result.hierarchy)
+        .filter(Boolean)
+        .join(' > '),
+      subtitle: result._snippetResult.content.value
+        .replace(/<[^>]+>/g, '')
+        .replace(/\n/g, ' ')
+        .replace(/\s+/g, ' ') + '...',
+      arg: result.url,
+      quicklookurl: result.url,
+      mods: {
+        alt: {
+          subtitle: result.anchor
         }
       }
-
-      if (result.anchor === '__next') {
-        entry.title = `${result.hierarchy.lvl1} > ${result.hierarchy.lvl2} > ${result.hierarchy.lvl3}`
-      }
-
-      return entry
-    })
+    }))
 
     alfy.output(items)
   })
