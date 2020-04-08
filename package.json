@@ -24,10 +24,10 @@
     "alfy"
   ],
   "dependencies": {
-    "alfy": "^0.7.0"
+    "alfy": "^0.9.1"
   },
   "devDependencies": {
-    "standard": "^11.0.1"
+    "standard": "^14.3.3"
   },
   "engines": {
     "node": ">=6"
