@@ -1,0 +1,10 @@
+{
+  // The language of the documentation
+  "language": "en",
+
+  // The version of the documentation
+  "branch": "master",
+
+  // The amount of search results shown after each search
+  "hitsPerPage": 6
+}
