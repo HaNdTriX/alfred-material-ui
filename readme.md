@@ -10,14 +10,29 @@
 $ npm install --global alfred-material-ui
 ```
 
-*Requires [Node.js](https://nodejs.org) 6+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
-
+_Requires [Node.js](https://nodejs.org) 6+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/)._
 
 ## Usage
 
 In Alfred, type `mui`, <kbd>Enter</kbd>, and your query.
 
-Select an item and press <kbd>Enter</kbd> to go to its [Material-UI](https://material-ui-next.com/) documentation.<br>
+Select an item and press <kbd>Enter</kbd> to go to its [Material-UI](https://material-ui-next.com/) documentation.
+
+## Options
+
+To open the options run `npm install` inside this package directory.
+
+### language
+
+The language of the documentation. Supported values: `en`, `de`, `fr`, `pt`, `es`, `ja`, `zh`, `ru`
+
+### branch
+
+The version of the documentation, Supported values: `master`, `next`
+
+### hitsPerPage
+
+The amount of search results shown.
 
 ## License
 

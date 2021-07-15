@@ -1,10 +1,10 @@
 {
-  // The language of the documentation
+  // The language of the documentation. Supported values: `en`, `de`, `fr`, `pt`, `es`, `ja`, `zh`, `ru`
   "language": "en",
 
-  // The version of the documentation
+  // The version of the documentation, Supported values: `master`, `next`
   "branch": "master",
 
-  // The amount of search results shown after each search
-  "hitsPerPage": 6
+  // The amount of search results shown.
+  "hitsPerPage": 30
 }
