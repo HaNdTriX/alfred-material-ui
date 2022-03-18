@@ -1,15 +1,15 @@
 {
   "name": "alfred-material-ui",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Alfred 3 workflow to search through the Material-UI documentation.",
   "main": "index.js",
+  "type": "module",
   "author": "Henrik Wenz <HaNdTriX@gmail.com> (https://github.com/HaNdTriX)",
   "license": "MIT",
   "repository": "handtrix/alfred-material-ui",
   "scripts": {
     "postinstall": "alfy-init",
-    "preuninstall": "alfy-cleanup",
-    "lint": "standard"
+    "preuninstall": "alfy-cleanup"
   },
   "files": [
     "index.js",
@@ -24,12 +24,9 @@
     "alfy"
   ],
   "dependencies": {
-    "alfy": "^0.11.1"
+    "alfy": "latest"
   },
   "engines": {
-    "node": ">=6"
-  },
-  "devDependencies": {
-    "standard": "^16.0.3"
+    "node": ">=12"
   }
 }
